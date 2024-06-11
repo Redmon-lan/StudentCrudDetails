@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="d-flex flex-column h-auto">
+<main class="flex-shrink-0">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title" th:text="${student.FirstName}"></h5>
+            <p class="card-text" th:text="${student.OtherName}"></p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item" th:text="${student.AdmissionNo}"></li>
+            <li class="list-group-item" th:text="${student.Age}">A second item</li>
+            <li class="list-group-item" th:text="${student.Year}">A third item</li>
+            <li class="list-group-item" th:text="${student.DateCreated}"></li>
+            <li class="list-group-item" th:text="${student.UpdatedOn}"></li>
+        </ul>
+        <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
